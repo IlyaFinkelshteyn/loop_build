@@ -1,4 +1,5 @@
 version: 1.0.0.{build}-{branch}
+skip_tags: true
 
 build_script:
   - echo "Dummy loop build" > loop_build.txt
@@ -10,7 +11,7 @@ artifacts:
 
 deploy:
     release: loop_build-v$(appveyor_build_version)
-    description: 'loop_build for tag $(appveyor_repo_tag_name) [skip ci]'
+    description: 'loop_build for tag $(appveyor_repo_tag_name)'
     provider: GitHub
     auth_token:
       secure: s0No7srfoBSMGEXAHdcx7q8Z2Q7Bnk/O/3eCq0xsoub4y4UQTRMJWU0PWQHjwGpi # your encrypted token from GitHub
