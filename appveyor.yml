@@ -10,7 +10,7 @@ artifacts:
 
 deploy:
     release: loop_build-v$(appveyor_build_version)
-    description: 'loop_build for tag $(appveyor_repo_tag_name)'
+    description: 'loop_build for tag $(appveyor_repo_tag_name) [skip ci]'
     provider: GitHub
     auth_token:
       secure: s0No7srfoBSMGEXAHdcx7q8Z2Q7Bnk/O/3eCq0xsoub4y4UQTRMJWU0PWQHjwGpi # your encrypted token from GitHub
