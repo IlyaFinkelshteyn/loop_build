@@ -13,7 +13,7 @@ deploy:
     description: 'loop_build for tag $(appveyor_repo_tag_name)'
     provider: GitHub
     auth_token:
-      secure: qxhiz7FUdvVu8OYlohC2zFCL4aH252sIDpQ++38DRoVkBujdJ78SU0QZ0KM50NmJ # your encrypted token from GitHub
+      secure: s0No7srfoBSMGEXAHdcx7q8Z2Q7Bnk/O/3eCq0xsoub4y4UQTRMJWU0PWQHjwGpi # your encrypted token from GitHub
     artifact: loop_build.txt             # Archived bin directory
     draft: false
     prerelease: false
