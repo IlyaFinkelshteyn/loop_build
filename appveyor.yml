@@ -2,7 +2,7 @@ version: 1.0.0.{build}-{branch}
 
 build_script:
   - echo "Dummy loop build" > loop_build.txt
-  - timeout 60
+  - timeout 2
 
 artifacts:
    - path: loop_build.txt
